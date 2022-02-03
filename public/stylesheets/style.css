@@ -37,6 +37,8 @@ nav{
   font-family: 'Tinos', serif;
   font-style: oblique;
   font-size: 20px;
+  border: 3px solid white;
+  
 }
 
  nav .logo{
@@ -150,7 +152,19 @@ nav{
 }
 
 .documentation h1{
-  margin-left: 40%;
+  margin-left: 41%;
   text-decoration: underline;
   font-style: oblique;
+}
+
+.documentation code{
+  background-color: rgba(255, 165, 0, .3);
+}
+
+.baseurl{
+  margin-left: 25%;
+}
+
+.documentation h2{
+  margin-left: 35%;
 }
