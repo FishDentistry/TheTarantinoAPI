@@ -18,11 +18,13 @@ a {
 }
 
 .secondpanel{
-  background-color: #1e4594;
+  background-color: #1d2026;
   min-height: 100vh;
   width: 100%;
   color: #fff;
   position: relative;
+  font-family: 'Tinos', serif;
+  
 }
 
 nav{
@@ -128,4 +130,26 @@ nav{
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
+}
+
+.documentation{
+  background-color: black;
+  width: 700px;
+  height: 350px;
+  position: absolute;
+  left: 38%;
+  top: 40%;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 15px 50px 30px;
+}
+
+.documentation p{
+  margin-left: 20%;
+}
+
+.documentation h1{
+  margin-left: 40%;
+  text-decoration: underline;
+  font-style: oblique;
 }
