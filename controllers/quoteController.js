@@ -7,7 +7,7 @@ exports.quote_list = function(req, res) {
             res.json(err);
         }
         else{
-            res.json(result);
+            res.json(result.populate("said_by","first_name"));
         }
     });
 };
@@ -20,7 +20,7 @@ exports.quote_detail = function(req, res) {
             res.json(err);
         }
         else{
-            res.json(result);
+            res.json(result.populate("said_by","first_name"));
         }
     });
 };

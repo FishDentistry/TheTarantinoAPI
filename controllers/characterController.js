@@ -7,7 +7,7 @@ exports.character_list = function(req, res) {
             res.json(err);
         }
         else{
-            res.json(result);
+            res.json(result.populate("movies_in","movie_name"));
         }
     });
 };
@@ -20,7 +20,7 @@ exports.character_detail = function(req, res) {
             res.json(err);
         }
         else{
-            res.json(result);
+            res.json(result.populate("movies_in","movie_name"));
         }
     });
 };
