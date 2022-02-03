@@ -9,7 +9,7 @@ function changeText(textPlane,quoteArray){
   if (index == quoteArray.length - 1){
     index = 0;
   }
-  if (iterationCount % 2 == 0){
+  else if (iterationCount % 2 == 0){
     textPlane.innerHTML = quoteArray[index];
     index = index + 1;
   }
