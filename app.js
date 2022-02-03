@@ -12,7 +12,7 @@ var app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb+srv://christian_fronk:Pigs123!@cluster0.np2cd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+var mongoDB = 'Connect URL here';
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
