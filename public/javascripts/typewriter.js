@@ -5,7 +5,7 @@ var index = 0;
 
 function changeText(textPlane,quoteArray){
   //console.log(iterationCount)
-  console.log(index)
+  //console.log(index)
   if (index == quoteArray.length - 1){
     index = 0;
   }
@@ -20,7 +20,7 @@ function changeText(textPlane,quoteArray){
 
 window.onload = function() {
   typeWriterText = document.getElementById("needstext");
-  console.log(typeWriterText);
+  //console.log(typeWriterText);
   typeWriterText.innerHTML = baseQuotes[0]
   typeWriterText.addEventListener('animationiteration', function() {changeText(typeWriterText,baseQuotes);});
 };
