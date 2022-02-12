@@ -1,4 +1,5 @@
 var Character = require('../models/characters');
+var Count = require('../models/counts');
 
 // Display list of all characters.
 exports.character_list = function(req, res) {

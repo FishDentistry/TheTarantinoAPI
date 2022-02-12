@@ -1,4 +1,5 @@
 var Quote = require('../models/quotes');
+var Count = require('../models/counts');
 
 // Display list of all quotes.
 exports.quote_list = function(req, res) {

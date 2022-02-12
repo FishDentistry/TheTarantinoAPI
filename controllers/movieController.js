@@ -1,4 +1,5 @@
 var Movie = require('../models/movies');
+var Count = require('../models/counts');
 
 // Display the site homepage
 exports.index = function(req, res) {
