@@ -1,8 +1,10 @@
 var Character = require('../models/characters');
 var Count = require('../models/counts');
+var countID = '62081f0a895dd734097387fb';
 
 // Display list of all characters.
 exports.character_list = function(req, res) {
+    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}});
     Character
     .find({})
     .populate('movies_in','movie_title')

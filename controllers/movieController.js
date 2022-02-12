@@ -1,5 +1,7 @@
 var Movie = require('../models/movies');
 var Count = require('../models/counts');
+var countID = '62081f0a895dd734097387fb';
+
 
 // Display the site homepage
 exports.index = function(req, res) {
@@ -8,6 +10,7 @@ exports.index = function(req, res) {
 
 // Display list of all movies.
 exports.movie_list = function(req, res) {
+    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}});
     Movie.find({}, function (err, result) {
         if (err){
             res.json(err);
