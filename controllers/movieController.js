@@ -25,6 +25,7 @@ exports.movie_list = function(req, res) {
 // Display detail page for a specific movie based on id number.
 exports.movie_detail = function(req, res) {
     //req.params.id
+    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}}).exec();
     Movie.find({_id:req.params.id}, function (err, result) {
         if (err){
             res.json(err);

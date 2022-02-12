@@ -22,6 +22,7 @@ exports.quote_list = function(req, res) {
 // Display detail page for a specific quote based on id number.
 exports.quote_detail = function(req, res) {
     //req.params.id
+    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}}).exec();
     Quote
     .find({_id:req.params.id})
     .populate('said_by','first_name')

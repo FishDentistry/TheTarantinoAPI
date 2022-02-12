@@ -22,6 +22,7 @@ exports.character_list = function(req, res) {
 // Display detail page for a specific character based on id number.
 exports.character_detail = function(req, res) {
     //req.params.id
+    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}}).exec();
     Character
     .find({_id:req.params.id})
     .populate('movies_in','movie_title')
