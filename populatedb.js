@@ -9,10 +9,10 @@ MongoClient.connect(url, function(err, client) {
   assert.equal(null, err);
   const db = client.db("tarantinoapi");
   db.collection('characters').insertOne({
-    first_name: "Zed" ,
-    last_name: " " ,
-    movies_in: [ObjectId("61f0ba945728c3ea158bafbb")],
-    played_by: "Peter Greene"
+    first_name: "Beatrix" ,
+    last_name: "Kiddo" ,
+    movies_in: [ObjectId("61f0c124eaa168bf5d3f567d"),ObjectId("61f0c175a253423c81588716")],
+    played_by: "Uma Thurman"
   })
   .then(function(result) {
     // process result

@@ -79,6 +79,17 @@ nav{
   font-size: 100px;
 }
 
+.desc{
+  position: absolute;
+  top: 145%;
+  left:15%;
+  width: 100%;
+  font-size: 25px;
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.815);
+  border-radius: 0px 65px 65px 0px;
+}
+
 .needs{
   position: absolute;
   top: 75%;
