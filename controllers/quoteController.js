@@ -5,7 +5,7 @@ var countID = new ObjectId('62081f0a895dd734097387fb');
 
 // Display list of all quotes.
 exports.quote_list = function(req, res) {
-    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}});
+    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}}).exec();
     Quote
     .find({})
     .populate('said_by','first_name')

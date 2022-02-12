@@ -5,7 +5,7 @@ var countID = new ObjectId('62081f0a895dd734097387fb');
 
 // Display list of all characters.
 exports.character_list = function(req, res) {
-    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}});
+    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}}).exec();
     Character
     .find({})
     .populate('movies_in','movie_title')

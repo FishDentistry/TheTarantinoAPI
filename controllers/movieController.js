@@ -11,7 +11,7 @@ exports.index = function(req, res) {
 
 // Display list of all movies.
 exports.movie_list = function(req, res) {
-    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}});
+    Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}}).exec();
     Movie.find({}, function (err, result) {
         if (err){
             res.json(err);
