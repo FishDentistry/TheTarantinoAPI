@@ -14,7 +14,6 @@ var app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-mongoose.set('useFindAndModify', false);
 var dev_db_url = 'mongodb+srv://user:pass@cluster0.np2cd.mongodb.net/tarantinoapi?retryWrites=true&w=majority'
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});

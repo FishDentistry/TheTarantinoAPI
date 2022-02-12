@@ -1,6 +1,7 @@
 var Movie = require('../models/movies');
 var Count = require('../models/counts');
-var countID = '62081f0a895dd734097387fb';
+var ObjectId = require('mongoose').Types.ObjectId;
+var countID = new ObjectId('62081f0a895dd734097387fb');
 
 
 // Display the site homepage
