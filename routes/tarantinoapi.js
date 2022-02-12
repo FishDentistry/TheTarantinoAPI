@@ -10,6 +10,9 @@ var quote_controller = require('../controllers/quoteController');
 
 router.get('/', movie_controller.index);
 
+//GET total number of API calls made
+router.get('/counts',movie_controller.total_calls);
+
 
 /// MOVIE ROUTES ///
 

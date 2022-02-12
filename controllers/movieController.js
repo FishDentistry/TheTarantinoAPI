@@ -9,6 +9,18 @@ exports.index = function(req, res) {
     res.sendfile('/public/pages/index.html', {'root': 'controllers/../'});
 };
 
+//Display total number of API calls
+exports.total_calls = function(req,res){
+    Count.find({_id:countID}, function (err, result) {
+        if (err){
+            res.json(err);
+        }
+        else{
+            res.json(result);
+        }
+    });
+}
+
 // Display list of all movies.
 exports.movie_list = function(req, res) {
     Count.findOneAndUpdate({_id :countID}, {$inc : {'request_count' : 1}}).exec();
