@@ -1,0 +1,210 @@
+.body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.hero{
+  background-color: #1d2026;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  background-image: url(../images/vincent.gif);
+  background-size: cover;
+}
+
+.secondpanel{
+  background-color: #1d2026;
+  background-image: url(../images/collage.jpg);
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  position: relative;
+  font-family: 'Tinos', serif;
+  
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: black;
+  font-family: 'Tinos', serif;
+  font-style: oblique;
+  font-size: 20px;
+  border: 3px solid white;
+  text-shadow: 1.5px 1.5px orange;
+}
+
+ nav .logo{
+  width: 160px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+.lamp-container{
+  position: absolute;
+  top: 25%;
+  left:3%;
+  width: 500px;
+  text-shadow: 5px 5px black;
+  font-family: 'Tinos', serif;
+  font-style: oblique;
+  
+}
+
+.lamp{
+  width: 100%;
+  left: 0%;
+  font-size: 100px;
+}
+
+.tarantino{
+  position: absolute;
+  top: 37%;
+  left:7%;
+  width: 100%;
+  font-size: 100px;
+}
+
+.api{
+  position: absolute;
+  top: 75%;
+  left:45%;
+  width: 100%;
+  font-size: 100px;
+}
+
+.desc{
+  position: absolute;
+  top: 145%;
+  left:15%;
+  width: 100%;
+  font-size: 25px;
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0px 65px 65px 0px;
+}
+
+.needs{
+  position: absolute;
+  top: 75%;
+  left:80%;
+  width: 300px;
+  font-size: 22px;
+  font-family: 'Tinos', serif;
+  font-style: oblique;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.815);
+  border-radius: 15px 50px 30px;
+  border: 3px solid white;
+}
+
+.needs p{
+  text-shadow: 1.5px 1.5px orange;
+}
+
+
+
+#needstext{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed 
+  animation-name: typing, blink-caret;
+  animation-duration: 4s, 2s;
+  animation-delay: 0s,0s;
+  animation-iteration-count: 5,5;
+  animation-timing-function: steps(20, end),steps(5, end);
+  animation-direction: alternate-reverse,normal;*/
+  font-family: 'Tinos', serif;
+  font-style: normal;
+  text-align: center;
+  animation-name: typing;
+  animation-duration: 2.85s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(17, end);
+  animation-direction: alternate-reverse;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100%}
+}
+
+/* The undo effect */
+@keyframes undo {
+  from { width: 100% }
+  to { width: 0% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.documentation{
+  background-color: black;
+  width: 700px;
+  height: 365px;
+  position: absolute;
+  left: 39%;
+  top: 40%;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 50px 50px 50px 50px;
+  border: 3px solid white;
+}
+
+.documentation p{
+  margin-left: 33%;
+  
+}
+
+.documentation h1{
+  margin-left: 38%;
+  text-decoration: underline;
+  font-style: oblique;
+  text-shadow: 1px 1px orange;
+}
+
+.documentation code{
+  background-color: rgba(255, 165, 0, .5);
+}
+
+.baseurl{
+  margin-left: 22%;
+}
+
+.documentation h2{
+  margin-left: 31%;
+}
+
+.served{
+  background-color: black;
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  left: 46%;
+  top: 80%;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 15px 50px 15px;
+  border: 3px solid white;
+}
+
+.served p{
+  margin-left: 24%;
+  font-style: oblique;
+  text-shadow: 1px 1px orange;
+}

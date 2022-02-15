@@ -6,7 +6,8 @@ var countID = new ObjectId('62081f0a895dd734097387fb');
 
 // Display the site homepage
 exports.index = function(req, res) {
-    res.sendfile('/public/pages/index.html', {'root': 'controllers/../'});
+    //res.sendfile('/public/pages/index.html', {'root': 'controllers/../'});
+    res.sendfile('/client/build/index.html', {'root': 'controllers/../'});
 };
 
 //Display total number of API calls

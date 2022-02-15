@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Tarantino API</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <link rel="shortcut icon" href="../images/cigarette.png"> 
+  <script src="../javascripts/typewriter.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tinos:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class = "hero">
+        <nav>
+            <h1 class = "logo">Fronk Studios Presents:</h1>
+        </nav>
+        <div class="lamp-container">
+            <h1 class = "lamp">The</h1>
+            <h1 class = "tarantino">Tarantino</h1>
+            <h1 class = "api">API</h1>
+            <p class = "desc">Your one-stop shop for Tarantino movie, character,and quote information</p>
+        </div>
+        <div class="needs">
+            <p>For all your</p>
+            <p id="needstext">Placeholder</p>
+            <p>needs</p>
+        </div>
+    </div>
+
+    <div class="secondpanel">
+        <nav>
+            <h1 class = "logo">API Documentation:</h1>
+        </nav>
+        <div class = "documentation">
+            <h2>Base url for all endpoints is</h2>
+            <code class = "baseurl">https://tarantinoapi.herokuapp.com/tarantinoapi</code>
+            <h1>Endpoints</h1>
+                <p><code>/movies</code> Get a list of all movies</p>
+                <p><code>/movies/:id</code> Get a movie by its ID</p>
+                <p><code>/characters</code> Get a list of all characters</p>
+                <p><code>/characters/:id</code> Get a character by their ID</p>
+                <p><code>/quotes</code> Get a list of all quotes</p>
+                <p><code>/quotes/:id</code> Get a quote by its ID</p>
+        </div>
+    </div>
+</body>
+</html>
